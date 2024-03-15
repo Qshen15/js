@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作元素内容</title>
+</head>
+<body>
+    <div class="div1">我是一个标签</div>
+    <div class="div2">我也是一个标签</div>
+    <script>
+        const html1 =document.querySelector('.div1');
+        const html2 =document.querySelector('.div2');
+        html1.innerText = '<h1>我是一个div标签<h1>';
+        html2.innerHTML = '<h1>我是一个div标签<h1>';
+    </script>
+</body>
+</html>

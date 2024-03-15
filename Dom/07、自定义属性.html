@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定义元素属性</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div data-id="1" data-name="mcq">自定义属性</div>
+    <script>
+    const dd = document.querySelector('div');
+    console.log(dd.dataset.id);
+    console.log(dd.dataset.name);
+    </script>
+</body>
+</html>

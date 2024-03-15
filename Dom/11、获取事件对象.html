@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他事件监听</title>
+
+    <style>
+        ul { 
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <input type="search" >
+    <script>
+        const search = document.querySelector('input[type=search]');
+        search.addEventListener('keyup', function(event) {
+            
+        if(event.key === 'Enter'){
+        console.log('点击了回车键！');
+        }
+        });
+  
+    </script>
+</body>
+</html>

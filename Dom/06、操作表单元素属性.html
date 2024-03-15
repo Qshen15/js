@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作表单元素属性</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <input type="text" value="我是input">
+    <input class="checkbox"type="checkbox">
+    <button>点击</button>
+    <script>
+        const input =document.querySelector('input');
+        // 更改input中的数值
+        input.value = '我还是input'
+        // 更改input类型
+        input.type='password';
+
+        const checkbox =document.querySelector('.checkbox');
+        // 更改checkbox的状态
+        checkbox.checked = true;
+        const btn = document.querySelector('button');
+        // true表示禁用按钮
+        btn.disabled = true;
+    </script>
+
+
+
+
+        
+    </script>
+</body>
+</html>

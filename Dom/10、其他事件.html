@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他事件监听</title>
+
+    <style>
+        ul { 
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <input type="search" >
+    <ul>
+        <li>电脑</li>
+        <li>手机</li>
+        <li>电视</li>
+        <li>耳机</li>
+
+    </ul>
+    <script>
+   const search = document.querySelector('input[type=search]');
+   const ul = document.querySelector('ul');
+//    获取焦点
+   search.addEventListener('focus',function(){
+    ul.style.display = 'block';
+   })
+//    失去焦点
+   search.addEventListener('blur',function(){
+    ul.style.display = 'none';
+   })
+   search.addEventListener('keydown',function(){
+    console.log('键盘按下事件！');
+   })
+   search.addEventListener('keyup',function(){
+    console.log('键盘抬起事件！');
+   })
+   search.addEventListener('input',function(){
+    console.log('键盘输入事件！');
+    console.log(search.value)
+   })
+    </script>
+</body>
+</html>

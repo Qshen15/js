@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件监听</title>
+
+    <style>
+        .box {
+             background-color: rgb(52, 7, 57);
+             width: 600px;
+             height: 300px;
+             position: absolute;
+             top: 20px;
+             right: 200px;
+        }
+        .btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">我是广告
+        <button class="btn">X</button>
+    </div>
+    <script>
+        const box = document.querySelector('.box');
+        const btn = document.querySelector('.btn');
+        btn.addEventListener('click',function(e) {
+            box.style.display = 'none';
+        })
+        // 鼠标经过
+        box.addEventListener('mouseenter',function(){
+            console.log('鼠标标经过');
+
+        })
+        box.addEventListener('mouseleave',function(){
+            console.log('鼠标离开');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>className操作元素属性</title>
+
+    <style>
+        .box1 {
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">我是一个盒子</div>
+    <script>
+        const box =document.querySelector('nav');
+        box.className = 'box1';
+        
+    </script>
+</body>
+</html>

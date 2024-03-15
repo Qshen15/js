@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定时器函数</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div>定时器</div>
+    <script>
+        let nn = 1
+        function fn() {
+            const dv = document.querySelector('div');
+            dv.innerText = '定时器'+nn;
+            nn++;
+        }
+        let n = setInterval(fn,1000);
+    //   结束计时器
+    clearInterval(n);
+    </script>
+</body>
+</html>

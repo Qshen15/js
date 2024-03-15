@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul class="nav">
+        <li>我的首页</li>
+        <li>产品介绍</li>
+        <li>联系方式</li>
+    </ul>
+    <script>
+        /* 这是现在常用方法 */
+        const lis = document.querySelectorAll('ul li');
+        // console.log(lis);
+
+        for(const li of lis) {
+            console.log(li);
+        }
+        /* 通过id获取 */
+        const li = document.getElementById('nav');
+        console.log(li);
+        /* 通过class获取 */
+        const lis2 = document.getElementsByClassName('nav');
+        console.log(lis2);
+        /* 通过标签名获取 */
+        const lis3 = document.getElementsByTagName('li');
+        console.log(lis3);
+        
+    </script>
 </body>
 </html>
