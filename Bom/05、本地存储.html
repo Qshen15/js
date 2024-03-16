@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地存储</title>
+</head>
+<body>
+    <script>
+        // 注意只能存储字符串
+        // 本地存储 
+        localStorage.setItem("name", "mcq");
+        // 读取数据
+        console.log(localStorage.getItem("name"));
+        // 删除数据
+        localStorage.removeItem("name");
+        console.log(localStorage.getItem("name"));
+        //删除所有数据
+        localStorage.clear();
+
+    </script>
+    <!-- sessionStorage 生命周期为关闭浏览器 -->
+</body>
+</html>

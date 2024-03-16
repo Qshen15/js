@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map方法和join方法</title>
+</head>
+<body>
+    <script>
+        const arr = ['红','绿','蓝']
+        // map方法
+
+        const map = arr.map(function(e,index) { 
+            console.log(e);
+            console.log(index);
+            return e + '颜色'
+        })
+        console.log(map);
+    
+        // join方法
+
+        const join = arr.join(',')
+        console.log(join);
+    </script>
+
+</body>
+</html>

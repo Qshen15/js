@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复杂数据类型本地存储</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            name: "mcq",
+            age: 18
+        }
+        // 将obj对象转换为json数据在进行存储
+        localStorage.setItem("obj", JSON.stringify(obj));
+        console.log(localStorage.getItem("obj"));
+        // 将json数据转换为对象
+        const obj2 = JSON.parse(localStorage.getItem("obj"));
+        console.log(obj2);
+     
+    </script>
+
+</body>
+</html>

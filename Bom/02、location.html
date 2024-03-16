@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>支付成功<span>5</span>秒后将自动跳转</div>
+    <script>
+        let time = 5
+        const div = document.querySelector('div')
+        let tt = setInterval(function() {
+            time--
+            console.log(time);
+            div.innerHTML = `支付成功<span>${time}</span>秒后将自动跳转`
+            if (time <= 0) {
+                clearInterval(tt)
+                window.location.href = 'http://www.baidu.com'
+            }
+
+        },1000);
+        window.location.search//用于获取?后边的值
+        window.location.hash//用于获取#后边的值
+        window.location.hostname//用于获取域名
+        window.location.port//用于获取端口号
+        window.location.protocol//用于获取协议
+        window.location.pathname//用于获取路径
+        window.location.origin//用于获取域名+端口号
+        window.location.href//用于获取完整的URL
+        window.location.reload()//刷新当前页面
+        window.location.replace()//替换当前页面
+        window.location.assign()//跳转到新页面
+        window.history.back()//返回上一页
+        window.history.forward()//跳转到下一页 
+        window.history.go(-1)//返回上一页
+        window.history.go(1)//跳转到下一页
+        window.history.length//返回历史记录的数量
+        window.history.state//返回历史记录的状态
+        window.history.replaceState()//设置历史记录的状态
+        window.history.pushState()//设置历史记录的状态
+        window.history.replaceState()//设置历史记录的状态
+        window.history.pushState()//设置历史记录的状态
+        
+      
+    </script>
+</body>
+</html>

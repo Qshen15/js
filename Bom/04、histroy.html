@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button>前进</button>
+    <button>后退</button>
+    <script>
+        const button = document.querySelector('button')
+        button.addEventListener('click', function () {
+            window.history.back()
+        })
+   
+        // window.location.reload()//刷新当前页面
+        // window.location.replace()//替换当前页面
+        // window.location.assign()//跳转到新页面
+        // window.history.back()//返回上一页
+        // window.history.forward()//跳转到下一页 
+        // window.history.go(-1)//返回上一页
+        // window.history.go(1)//跳转到下一页
+        // window.history.length//返回历史记录的数量
+        // window.history.state//返回历史记录的状态
+        // window.history.replaceState()//设置历史记录的状态
+        // window.history.pushState()//设置历史记录的状态
+        // window.history.replaceState()//设置历史记录的状态
+        // window.history.pushState()//设置历史记录的状态
+        
+      
+    </script>
+</body>
+</html>
