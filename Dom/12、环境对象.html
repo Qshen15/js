@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环境对象</title>
+    <style>
+        button {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <button>点击</button>
+    <script>
+        const btn = document.querySelector('button');
+        btn.addEventListener('click',init);
+        function init() {
+            this.style.backgroundColor = 'blue'
+        }
+    </script>
+</body>
+</html>

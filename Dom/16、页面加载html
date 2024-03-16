@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面加载</title>
+    <style>
+        
+    </style>
+    <script>
+        // 等待页面资源加载完成在执行以下代码
+        window.addEventListener('load', function(e) {
+            const btn = document.addEventListener("click", function(e) {
+                alert('按钮')
+            });
+
+        })
+        // 等待页面元素加载完成在执行以下代码
+        window.addEventListener('DOMContentLoaded', function(e) {
+            const btn = document.addEventListener("click", function(e) {
+                alert('按钮')
+            });
+
+        })
+    </script>
+</head>
+<body>
+  
+    <button>点击</button>
+   
+</body>
+</html>

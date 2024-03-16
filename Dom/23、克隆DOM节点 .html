@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>克隆DOM节点</title>
+  
+</head>
+<body>
+  <ul>
+    <li>第一个li</li>
+  </ul>
+    <script>
+        // 第一步创建元素
+        const ul = document.querySelector('ul');
+        //克隆元素
+        const li = ul.children[0].cloneNode(true);
+        //添加元素
+        ul.appendChild(li);
+      
+    </script>
+</body>
+</html>

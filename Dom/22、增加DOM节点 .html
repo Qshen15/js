@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增加DOM节点</title>
+  
+</head>
+<body>
+  <ul>
+    <li>第一个li</li>
+  </ul>
+    <script>
+        // 第一步创建元素
+        const ul = document.querySelector('ul');
+        const li = document.createElement('li');
+        li.innerText = '第二个li';
+        // 将创建的元素添加到父元素中
+        ul.appendChild(li);//插入到最后
+        //追加节点永远在最前面
+        ul.insertBefore(li,ul.children[0]);
+      
+    </script>
+</body>
+</html>

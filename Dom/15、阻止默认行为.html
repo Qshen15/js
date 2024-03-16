@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组织默认行为</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+  
+    <a href="Dom/14、事件委托.html">bilibili</a>
+    <script>
+        const a = document.querySelector('a')
+        a.addEventListener('click', function(event) {
+            // 阻止默认行为
+            event.preventDefault();
+
+        })
+       
+    </script>
+</body>
+</html>

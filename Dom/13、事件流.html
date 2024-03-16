@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件流</title>
+    <style>
+        .fat {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(59, 4, 59);
+        }
+        .son {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(67, 126, 106);
+        }
+        .fat2 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(59, 4, 59);
+        }
+        .son2 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(67, 126, 106);
+        }
+    </style>
+</head>
+<body>
+    <div class="fat">事件冒泡
+        <div class="son"></div>
+    </div>
+    <hr>
+    <div class="fat2">事件捕获
+        <div class="son2"></div>
+    </div>
+    <script>
+       
+       const fat = document.querySelector('.fat');
+       const son = document.querySelector('.son');
+       
+       fat.addEventListener('click', function(e) {
+        alert('fat');
+       })
+       son.addEventListener('click', function(e) {
+        alert('son');
+       })
+
+       const fat2 = document.querySelector('.fat2');
+       const son2 = document.querySelector('.son2');
+       
+       fat2.addEventListener('click', function(e) {
+        alert('fat');
+       },true)
+       son2.addEventListener('click', function(e) {
+        alert('son');
+        // 阻止冒泡
+        e.stopPropagation();
+       },true)
+    </script>
+</body>
+</html>
