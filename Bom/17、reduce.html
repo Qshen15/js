@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce方法</title>
+</head>
+<body>
+    <script>
+     
+     const arr = [1, 2, 3, 4, 5, 6]
+     // reduce方法
+    //1、没有初始值的情况-prev指上一次得值，currebt本次的值
+     const num = arr.reduce(function(prev, currebt ) { 
+        return prev +currebt; 
+    })
+    // 2、有初始值的情况
+     const num2 = arr.reduce(function(prev, currebt ) { 
+        return prev +currebt; 
+    }, 100)
+    // 箭头函数写法
+     const num3 = arr.reduce((prev, currebt) => { 
+        return  prev +currebt; 
+    }, 100)
+    console.log(num, num2, num3)
+    </script>
+</body>
+</html>

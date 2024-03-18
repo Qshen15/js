@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <script>
+
+     function init ( name ,age) {
+       this.name = name;
+       this.age = age;
+
+     }
+     init.prototype = {
+       constructor: init,
+       sing:function (){
+         console.log('唱歌');
+       },
+       dance:function(){
+         console.log('跳舞');
+       }
+     }
+     
+    </script>
+</body>
+</html>

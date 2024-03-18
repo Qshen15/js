@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String常见的方法</title>
+</head>
+<body>
+    <script>
+      const string ='今天是星期天，2024'
+    //   返回第一个索引
+      console.log(string.indexOf('星期'))
+      // 返回最后一个索引
+      console.log(string.lastIndexOf('星期'))
+      // 返回字符串中是不是包含该字符
+      console.log(string.includes('星期'))
+      // 返回字符串是不是某字符开头
+      console.log(string.startsWith('星期'))
+      console.log(string.endsWith('星期'))
+    //   分割字符串到数组中
+      const arr = string.split('，')
+      console.log(arr);
+    </script>
+</body>
+</html>

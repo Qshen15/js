@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组常见方法</title>
+</head>
+<body>
+    <script>
+     const search = [
+        {
+            name: '小米',
+            price: 100
+        },
+        {
+            name: '华为',
+            price: 200
+        }
+     ]
+
+     const item = search.find(function(item) { 
+        return item.name == '小米'
+     });
+     console.log(item);
+
+     const item2 = [10,20,30]
+     const flag = item2.every(function(item) {
+        return item > 10
+     })
+     console.log(flag);//如果都大于10则返回true
+
+     const item3 = [10,20,30]
+     const flag2 = item3.some(function(item) {
+        return item > 10
+     })
+     console.log(flag2);//如果有一个大于10则返回true
+    </script>
+</body>
+</html>

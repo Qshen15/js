@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object静态方法</title>
+</head>
+<body>
+    <script>
+        const arr = {
+            a: 1,
+            b: 2,
+            c: 3
+        }
+
+        //获取属性名字
+        console.log(Object.keys(arr))
+        // 获取属性值
+        console.log(Object.values(arr))
+        // 获取所有属性
+        console.log(Object.entries(arr))
+        // 数据拷贝
+        const oo = {}
+        Object.assign(oo, arr)
+        console.log(oo);
+    </script>
+</body>
+</html>

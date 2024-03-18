@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+</head>
+<body>
+    <script>
+
+     function init ( name ,age) {
+       this.name = name;
+       this.age = age;
+
+     }
+
+      init.prototype.sing = function () {
+        console.log('唱歌');
+      }
+
+       const obj = new init('张三',18);
+       obj.sing();
+    </script>
+</body>
+</html>

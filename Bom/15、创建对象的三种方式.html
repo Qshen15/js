@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建对象的三种方式</title>
+</head>
+<body>
+    <script>
+        // 1、直接创建
+        const arr1 = {
+            name: '张三',
+            age: 18
+        }
+        // 2、通过new来创建
+        const arr2 = new Object();
+        arr2.name = '张三';
+        arr2.age = 18;
+        // 3、通过构造函数来创建
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        const arr3 = new Person('张三', 18);
+    </script>
+</body>
+</html>

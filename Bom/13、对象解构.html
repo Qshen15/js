@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象解构</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            name: "mcq",
+            age: 18
+        }
+        // 注意解构时变量名字和属性名字要一致
+        const { name, age } = obj
+        console.log(name, age)
+
+        // 变量名字的改名
+        const { name: name2, age: age1 } = obj
+        console.log(name2, age1)
+
+        // 数组对象的解构
+        const arr = [1, 2, 3]
+        const [a, b, c] = arr
+        console.log(a, b, c)
+
+        // 多级对象解构
+
+        const obj2 = {
+            names: "mcq",
+            ages: 18,
+            address: {
+                city: "shanghai",
+                country: "china"
+            }
+        }
+        const { names, ages, address: { city, country } } = obj2
+        console.log(names, ages, city, country)
+    </script>
+</body>
+</html>

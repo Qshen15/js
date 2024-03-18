@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>箭头函数</title>
+</head>
+<body>
+    <script>
+        // 基本函数
+        const fn = ()=> {
+            console.log('箭头函数');
+        }
+        fn();
+        // 带参函数
+        const fn1 = (x)=> {
+            console.log('箭头函数'+x);
+        }
+        fn1(1);
+        // 带参函数省略（只有一个形参时）
+        const fn2 = x => {
+            console.log('箭头函数'+x);
+        }
+        fn2(1);
+        // 带参函数省略（只有一个函数体时）
+        const fn3 = x => console.log('箭头函数'+x);
+        fn3(1);
+         // 带参函数省略（只有一个函数体时省略return）
+         const fn4 = x => x+x
+        console.log(fn4(1))
+    </script>
+</body>
+</html>
